@@ -2,23 +2,12 @@
   font-family: gilroy;
   src: url(fonts/Gilroy-Medium.ttf);
 }
-@font-face {
-  font-family: woodmart;
-  src: url(fonts/woodmart-font-1-400.woff2);
-}
-@font-face {
-  font-family: woodmart2;
-  src: url(fonts/c4mw1n92AsfhuCq6tVsaoIx1LQICk0boNoq0ShNPVo0.woff2);
-}
-@font-face {
-  font-family: woodmart3;
-  src: url(fonts/wlpwgwvFAVdoq2_v-6QU.woff2);
-}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: woodmart2;
+  font-family: gilroy;
   text-transform: capitalize;
   text-decoration: none;
   letter-spacing: 2px;
@@ -295,8 +284,8 @@ header {
   width: 100%;
 }
 .woodmart-header {
-  padding: 10px 0;
   justify-content: space-between;
+  padding: 5px 0;
 }
 .woodmart-header h3,
 span {
@@ -312,6 +301,7 @@ ul {
   background: url(assets/w-developer-top-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .hero-section {
   display: flex;
@@ -332,7 +322,7 @@ ul {
   align-items: start;
   flex-direction: column;
   gap: 30px;
-  padding: 10rem 0;
+  padding: 10rem 0 8rem 0;
   flex-basis: 60%;
 }
 .input {
@@ -361,7 +351,7 @@ ul {
 }
 .right-section img {
   position: absolute;
-  top: 140px;
+  top: 70px;
   right: 250px;
 }
 span {
@@ -376,7 +366,9 @@ span {
 .social:hover {
   opacity: 0.8;
 }
-
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
 .swiper-container {
   width: 100%;
   display: none;
@@ -513,13 +505,11 @@ span {
   -o-transition: all 300ms ease-out;
   -ms-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
-  /* transform: translateX(140px);
-  -webkit-transform: translateY(30px); */
   text-align: center;
 }
 .box .title {
   font-size: 2rem;
-  margin-top: 30px;
+  margin-top: 50px;
   text-transform: uppercase;
   opacity: 0;
   transition-delay: 0.1s;
@@ -529,24 +519,19 @@ span {
 .box:focus .title {
   opacity: 1;
   margin-top: 0;
-  /* transform: translateY(-100px);
-  transform: translatex(100px); */
 }
 
 .box .tagline {
   font-size: 0.8rem;
   opacity: 0;
-  margin-top: 50px;
+  margin-bottom: 50px;
   transition-delay: 0.2s;
   transition-duration: 0.2s;
 }
 .box:hover .tagline,
 .box:focus .tagline {
   opacity: 1;
-  margin-top: 0;
-
-  /* transform: translateY(-100px);
-  transform: translatex(120px); */
+  margin-bottom: 0;
 }
 .box:hover img {
   scale: 1.2;
@@ -570,7 +555,7 @@ span {
 }
 .contact-btn {
   padding: 9px 10px;
-  /* background-color: var(--btn-accented-bgcolor); */
+
   border: 1px solid var(--btn-accented-bgcolor-hover);
   border-radius: 20px;
   display: flex;
@@ -630,6 +615,7 @@ span {
 }
 .tab__label {
   font-size: 1.1rem;
+  letter-spacing: 0px;
 }
 .accordion .tab {
   position: relative;

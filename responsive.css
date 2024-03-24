@@ -53,6 +53,7 @@
   .contact-me h1 {
     font-size: 2.5rem;
     font-weight: 900;
+    text-align: center;
   }
   .sub_footer h1 {
     text-align: center;
@@ -111,5 +112,12 @@
     gap: 20px;
     flex-direction: column;
     align-items: start;
+  }
+  .submit {
+    padding: 15px 15px;
+  }
+  .box {
+    width: 280px;
+    height: 280px;
   }
 }

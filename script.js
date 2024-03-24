@@ -22,8 +22,8 @@ btn.addEventListener("click", () => {
 });
 
 gsap.to("header", {
-  backgroundColor: "#244059",
-  height: "70px",
+  backgroundColor: "#212121",
+  height: "60px",
   duration: 0.5,
   delay: 1,
   scrollTrigger: {
@@ -31,7 +31,7 @@ gsap.to("header", {
     scroller: "body",
     start: "top -10%",
     end: "top -11%",
-    scrub: 2,
+    scrub: 1,
   },
 });
 
@@ -52,8 +52,9 @@ let portfolioSwiper = new Swiper(".portfolio-container", {
   loop: true,
   freeMode: true,
   speed: 8000,
-  parallax: true,
+  // parallax: true,
   autoplayDisableOnInteraction: false,
+
   // mousewheel: {
   //   invert: true,
   // },
@@ -63,18 +64,18 @@ let portfolioSwiper = new Swiper(".portfolio-container", {
   //   slideShadows: false,
   // },
   autoplay: {
-    delay: 0,
+    delay: 1,
     disableOnInteraction: false,
   },
   breakpoints: {
-    220: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
+    // 220: {
+    //   slidesPerView: 1,
+    //   spaceBetween: 20,
+    // },
     // when window width is >= 320px
     320: {
-      slidesPerView: 1.7,
-      spaceBetween: 20,
+      slidesPerView: 1.5,
+      spaceBetween: 10,
     },
     // when window width is >= 480px
     480: {
