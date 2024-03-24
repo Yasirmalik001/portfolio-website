@@ -745,7 +745,7 @@ span {
 .tab__content {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.5s;
+  -webkit-transition: all 0.5s cubic-bezier(0.17, 0.67, 1, 0.41);
   -o-transition: all 0.5s;
   transition: all 0.5s;
   margin: 20px 0;
@@ -762,6 +762,9 @@ span {
   padding-top: 20px;
   border-bottom: 2px solid #ffffff56;
 }
+.tab input:checked ~ .tab__label {
+  color: var(--btn-accented-bgcolor-hover);
+}
 .tab input:checked ~ .tab__content {
   max-height: 15rem;
 }
@@ -774,7 +777,7 @@ input[type="checkbox"] {
   transform: rotate(90deg);
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 1, 0.41);
 }
 .tab .arrow-icon {
   position: absolute;
@@ -786,7 +789,7 @@ input[type="checkbox"] {
   transform: rotate(270deg);
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 1, 0.41);
 }
 .greeting-question {
   gap: 100px;

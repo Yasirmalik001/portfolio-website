@@ -49,6 +49,7 @@ let portfolioSwiper = new Swiper(".portfolio-container", {
   slidesPerView: "auto",
   spaceBetween: 10,
   // slidesPerView: 7,
+  centeredSlides: true,
   loop: true,
   freeMode: true,
   speed: 8000,
@@ -76,24 +77,34 @@ let portfolioSwiper = new Swiper(".portfolio-container", {
     320: {
       slidesPerView: 1.5,
       spaceBetween: 10,
+      centeredSlides: true,
+      loop: true,
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 2,
+      slidesPerView: 2.5,
       spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
     },
     // when window width is >= 640px
     640: {
       slidesPerView: 3.2,
       spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
     },
     840: {
       slidesPerView: 4,
       spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
     },
     1040: {
       slidesPerView: 5,
       spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
     },
     1240: {
       slidesPerView: 6,
