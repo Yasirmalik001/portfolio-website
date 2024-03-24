@@ -1,0 +1,115 @@
+@media screen and (max-width: 990px) {
+  .right-section {
+    display: none;
+  }
+  .hero-section {
+    flex-direction: column;
+  }
+  .hamburger {
+    display: block;
+  }
+  header {
+    padding: 0 20px;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  nav {
+    display: none;
+  }
+  .my_skills {
+    gap: 20px;
+    padding: 70px 20px;
+    text-align: center;
+  }
+
+  .portfolio-section {
+    padding: 30px;
+    flex-direction: column;
+  }
+  .my-portfolio {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .greeting-question {
+    flex-direction: column;
+  }
+  .footer-header {
+    justify-content: center;
+  }
+  .contact-me p {
+    width: 80%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    display: block;
+  }
+  .my_work_experience {
+    display: none;
+  }
+  .contact-me h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  .sub_footer h1 {
+    text-align: center;
+  }
+  .input {
+    width: 250px;
+  }
+  .input::placeholder {
+    font-size: 0.8rem;
+  }
+  .portfolio-right {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .concepts {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .my-work {
+    color: #fff;
+    padding: 0 50px;
+  }
+
+  .circle__up.button-show {
+    right: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .woodmart-logo span,
+  h3 {
+    display: none;
+  }
+  .hamburger {
+    right: 40px;
+    width: 20px;
+    height: 20px;
+  }
+  .swiper-container {
+    display: block;
+  }
+  .my_work_experience {
+    display: none;
+  }
+  header {
+    padding: 0 20px;
+  }
+  .hero-text h1 {
+    font-size: 2.5rem;
+    padding: 1rem 0.5rem;
+  }
+  .input {
+    width: 200px;
+  }
+  .contact_socials {
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+  }
+}
