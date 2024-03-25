@@ -75,7 +75,7 @@ let portfolioSwiper = new Swiper(".portfolio-container", {
     // },
     // when window width is >= 320px
     320: {
-      slidesPerView: 1.5,
+      slidesPerView: 2.3,
       spaceBetween: 10,
       centeredSlides: true,
       loop: true,

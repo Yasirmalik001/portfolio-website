@@ -691,7 +691,7 @@ span {
   gap: 20px;
 }
 .contact-btn {
-  padding: 9px 10px;
+  padding: 10px 15px;
 
   border: 1px solid var(--btn-accented-bgcolor-hover);
   border-radius: 20px;
@@ -882,7 +882,7 @@ input[type="checkbox"] {
   height: 100%;
 }
 .get_in_touch {
-  width: 80%;
+  width: 90%;
   border-radius: 20px;
   padding: 0 20px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgb(60, 56, 255)), to(rgb(27, 179, 244)));

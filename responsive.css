@@ -39,7 +39,7 @@
     justify-content: center;
   }
   .contact-me p {
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
 }
@@ -117,7 +117,14 @@
     padding: 15px 15px;
   }
   .box {
-    width: 280px;
-    height: 280px;
+    width: 340px;
+    height: 320px;
+  }
+  .portfolio-right {
+    row-gap: 15px;
+  }
+  .our-image {
+    width: 200px;
+    height: 200px;
   }
 }
