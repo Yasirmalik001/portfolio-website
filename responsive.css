@@ -2,6 +2,9 @@
   .right-section {
     display: none;
   }
+  .portfolio-left {
+    position: static;
+  }
   .hero-section {
     flex-direction: column;
   }
@@ -25,13 +28,8 @@
 
   .portfolio-section {
     padding: 30px;
-    flex-direction: column;
   }
-  .my-portfolio {
-    text-align: center;
-    align-items: center;
-    width: 100%;
-  }
+
   .greeting-question {
     flex-direction: column;
   }
@@ -42,8 +40,16 @@
     width: 100%;
     text-align: center;
   }
+  .box {
+    max-width: 280px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .portfolio-section {
+    /* padding: 30px; */
+    flex-direction: column;
+  }
+
   .swiper-container {
     display: block;
   }
@@ -64,10 +70,11 @@
   .input::placeholder {
     font-size: 0.8rem;
   }
-  .portfolio-right {
+  /* .portfolio-right {
     grid-template-columns: 1fr;
-    gap: 0;
-  }
+    width: 100%;
+    gap: 10px;
+  } */
   .concepts {
     width: 100%;
     align-items: center;
@@ -116,10 +123,7 @@
   .submit {
     padding: 15px 15px;
   }
-  .box {
-    width: 340px;
-    height: 320px;
-  }
+
   .portfolio-right {
     row-gap: 15px;
   }

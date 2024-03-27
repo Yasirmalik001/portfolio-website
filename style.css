@@ -222,6 +222,7 @@
   border: none;
   background-color: transparent;
   width: 100%;
+  color: white;
 }
 .search::-webkit-input-placeholder {
   font-size: 1rem;
@@ -271,7 +272,7 @@
   color: var(--color-gray-800);
   font-size: 16px;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: visible;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateX(100%);
@@ -289,22 +290,26 @@
   transform: none;
   pointer-events: visible;
 }
-.xtemos-demos-preview-wrapper {
+.circle {
+  fill: #00000048;
+}
+.whatsapp_button {
   position: fixed;
-  bottom: 40px;
-  left: 40px;
-  background-color: #666;
-  border-radius: 30px;
-  padding: 8px 10px;
-  z-index: 999;
+  bottom: 20px;
+  left: 20px;
+  line-height: 1;
+  z-index: 99;
+  border-radius: 10rem;
+  background-image: -o-linear-gradient(left, rgb(15, 15, 15), rgb(36, 94, 135) 100%);
+  background-image: linear-gradient(to right, rgb(15, 15, 15), rgb(36, 94, 135) 100%);
+  font-weight: 600;
+  padding: 0.75rem 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
 }
-.xtemos-demos-preview-wrapper:hover {
-  background-color: var(--notices-success-bg);
-}
-.buy-woodmart span {
-  font-size: 0.8rem;
-  color: #fff;
-}
+
 .apply {
   background-color: var(--btn-accented-bgcolor);
   padding: 8px 15px;
@@ -313,19 +318,7 @@
 .apply:hover {
   opacity: 0.8;
 }
-.xtemos-demos-preview-wrapper a {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 6px;
-}
+
 .container {
   max-width: var(--wd-container-w);
   margin: 0 auto;
@@ -574,18 +567,19 @@ span {
   gap: 10px;
 }
 .portfolio-section {
-  /* height: 150dvh; */
+  align-items: start;
+  justify-content: space-between;
   padding: 100px 0;
   background-color: white;
   gap: 30px;
+  position: relative;
   /* display: none; */
 }
 .box {
   cursor: pointer;
-  height: 350px;
+  max-width: 350px;
   position: relative;
   overflow: hidden;
-  width: 350px;
   border-radius: 10px;
 }
 .box img {
@@ -665,6 +659,11 @@ span {
 .box:hover img {
   scale: 1.2;
 }
+.portfolio-left {
+  position: sticky;
+  top: 100px;
+  left: 0;
+}
 .my-portfolio {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -673,6 +672,7 @@ span {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
+  justify-content: start;
   gap: 50px;
 }
 .my-portfolio h1 {
@@ -689,10 +689,10 @@ span {
   -ms-grid-columns: 1fr 20px 1fr;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  /* width: 100%; */
 }
 .contact-btn {
   padding: 10px 15px;
-
   border: 1px solid var(--btn-accented-bgcolor-hover);
   border-radius: 20px;
   display: -webkit-box;
