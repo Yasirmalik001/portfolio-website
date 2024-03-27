@@ -70,11 +70,11 @@
   .input::placeholder {
     font-size: 0.8rem;
   }
-  /* .portfolio-right {
+  .portfolio-right {
     grid-template-columns: 1fr;
     width: 100%;
     gap: 10px;
-  } */
+  }
   .concepts {
     width: 100%;
     align-items: center;
