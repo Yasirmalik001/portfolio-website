@@ -40,13 +40,11 @@
     width: 100%;
     text-align: center;
   }
-  .box {
-    max-width: 280px;
-  }
+ 
 }
 @media screen and (max-width: 768px) {
   .portfolio-section {
-    /* padding: 30px; */
+    width: 100%;
     flex-direction: column;
   }
 
@@ -126,6 +124,7 @@
 
   .portfolio-right {
     row-gap: 15px;
+
   }
   .our-image {
     width: 200px;
