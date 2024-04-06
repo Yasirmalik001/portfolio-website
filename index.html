@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="script.js" defer></script>
@@ -39,10 +39,10 @@
           </div>
           <nav>
             <ul class="display-flex">
-              <li>home</li>
-              <li>portfolio</li>
-              <li>contact</li>
-              <li>about us</li>
+              <li><a href="#home">home</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#contact">contact</a></li>
+              <li><a href="#about">about us</a></li>
               <span>|</span>
               <li class="apply">apply now</li>
             </ul>
@@ -60,18 +60,17 @@
                 <input type="search" class="search" placeholder="search for products" />
                 <i class="bi bi-search"></i>
               </div>
-              <li><a class="menu__item" href="#">home</a></li>
-              <li><a class="menu__item" href="#">testimonials</a></li>
-              <li><a class="menu__item" href="#">about</a></li>
-              <li><a class="menu__item" href="#">portfolio</a></li>
-              <li><a class="menu__item" href="#">contact</a></li>
+              <li><a class="menu__item" href="#home">home</a></li>
+              <li><a class="menu__item" href="#about">about</a></li>
+              <li><a class="menu__item" href="#portfolio">portfolio</a></li>
+              <li><a class="menu__item" href="#contact">contact</a></li>
             </div>
           </div>
         </div>
       </header>
       <!-- header end -->
       <section>
-        <div class="hero-bg-image">
+        <div id="home" class="hero-bg-image">
           <div class="hero-section container">
             <div class="left-section">
               <div class="hero-text">
@@ -162,7 +161,7 @@
       </section>
       <!-- section end -->
       <section>
-        <div class="portfolio-section display-flex container">
+        <div id="portfolio" class="portfolio-section display-flex container">
           <div class="portfolio-left">
             <div class="my-portfolio display-flex">
               <img src="assets/w-developer-face-2.png" alt="" />
@@ -219,7 +218,7 @@
       </section>
       <!-- section end -->
       <section>
-        <div class="introduction_page">
+        <div  id="contact" class="introduction_page">
           <div class="greeting-question display-flex container">
             <div class="greeting display-flex">
               <div class="me display-flex">
@@ -370,7 +369,7 @@
               </div>
             </div>
           </div>
-          <div class="get_in_touch container">
+          <div id="about" class="get_in_touch container">
             <div class="contact-me display-flex">
               <img src="assets/apple-face.png" alt="face" />
               <h1>get in touch</h1>
