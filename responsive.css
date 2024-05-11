@@ -1,9 +1,7 @@
 @media screen and (max-width: 990px) {
-  .right-section {
-    display: none;
-  }
   .hero-section {
     flex-direction: column;
+    padding: 0 30px;
   }
   .hamburger {
     display: block;
@@ -12,7 +10,7 @@
     padding: 0 20px;
   }
   .hero-text h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   nav {
     display: none;
@@ -27,23 +25,18 @@
     padding: 30px;
     flex-direction: column;
   }
-  .my-portfolio {
-    text-align: center;
-    align-items: center;
-    width: 100%;
-  }
-  .greeting-question {
-    flex-direction: column;
-  }
-  .footer-header {
-    justify-content: center;
-  }
-  .contact-me p {
-    width: 80%;
-    text-align: center;
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
+  .Qonkar-logo img {
+    width: 150px;
+  }
+  .typed {
+    font-size: 2rem;
+  }
   .swiper-container {
     display: block;
   }
@@ -57,40 +50,25 @@
   .sub_footer h1 {
     text-align: center;
   }
-  .input {
-    width: 250px;
-  }
-  .input::placeholder {
-    font-size: 0.8rem;
-  }
   .portfolio-right {
     grid-template-columns: 1fr;
     gap: 0;
   }
   .concepts {
-    width: 100%;
+    width: 250px;
+    margin-inline: auto;
     align-items: center;
     text-align: center;
   }
   .my-work {
-    color: #fff;
+    color: #000;
     padding: 0 50px;
   }
 
   .circle__up.button-show {
     right: 20px;
   }
-}
-@media screen and (max-width: 450px) {
-  .woodmart-logo span,
-  h3 {
-    display: none;
-  }
-  .hamburger {
-    right: 40px;
-    width: 20px;
-    height: 20px;
-  }
+
   .swiper-container {
     display: block;
   }
@@ -102,14 +80,48 @@
   }
   .hero-text h1 {
     font-size: 2.5rem;
-    padding: 1rem 0.5rem;
-  }
-  .input {
-    width: 200px;
+    padding: 5px 0;
   }
   .contact_socials {
     gap: 20px;
     flex-direction: column;
     align-items: start;
+  }
+  .footer-dropdown {
+    display: block;
+    padding: 0 10px;
+  }
+  .footer-wrapper {
+    display: none;
+  }
+  figure img {
+    width: 80%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .swiper-container {
+    display: block;
+  }
+  .my_work_experience {
+    display: none;
+  }
+  header {
+    padding: 0 20px;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .footer-dropdown {
+    display: block;
+    padding: 0 10px;
+  }
+  .footer-wrapper {
+    display: none;
   }
 }

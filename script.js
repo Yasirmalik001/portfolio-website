@@ -1,3 +1,12 @@
+var typed = new Typed(".typed", {
+  strings: ["digital IDEAS", "digital SUCCESS", "UI/UX DESIGN"],
+  typeSpeed: 50,
+  backSpeed: 20,
+  shuffle: true,
+  fadeOut: true,
+  loop: true,
+});
+
 var btn = document.querySelector(".circle__up");
 const checkScroll = () => {
   switch (true) {
@@ -21,49 +30,30 @@ btn.addEventListener("click", () => {
   });
 });
 
-gsap.to("header", {
-  backgroundColor: "#244059",
-  height: "70px",
-  duration: 0.5,
-  delay: 1,
-  scrollTrigger: {
-    trigger: "#header",
-    scroller: "body",
-    start: "top -10%",
-    end: "top -11%",
-    scrub: 2,
-  },
-});
-
 var Swipes = new Swiper(".swiper-container", {
-  loop: true,
+  loop: false,
   slidesPerView: "1",
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
 });
 
 let portfolioSwiper = new Swiper(".portfolio-container", {
   grabCursor: true,
-  slidesPerView: "auto",
+  slidesPerView: "5",
   spaceBetween: 10,
-  // slidesPerView: 7,
-  loop: true,
+  loop: false,
   freeMode: true,
-  speed: 8000,
-  parallax: true,
+  speed: 10000,
+  parallax: false,
   autoplayDisableOnInteraction: false,
-  // mousewheel: {
-  //   invert: true,
-  // },
-  // effect: "coverflow",
-  // coverflowEffect: {
-  //   rotate: 30,
-  //   slideShadows: false,
-  // },
   autoplay: {
-    delay: 0,
+    delay: 5000,
     disableOnInteraction: false,
   },
   breakpoints: {
